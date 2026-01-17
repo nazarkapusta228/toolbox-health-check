@@ -14,5 +14,4 @@ public class SystemMetrics {
     private String diskFree;
     private String memoryFree;
     private double cpuUsage;
-
 }

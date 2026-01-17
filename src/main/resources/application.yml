@@ -1,1 +1,24 @@
-spring.application.name=toolbox-health-check
+spring:
+  application:
+    name: toolbox-health-check
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+      base-path: /status
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+    metrics:
+      access: read_only
+
+
