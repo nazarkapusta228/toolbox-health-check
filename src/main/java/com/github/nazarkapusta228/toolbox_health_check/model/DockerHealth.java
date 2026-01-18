@@ -15,5 +15,7 @@ public class DockerHealth {
     private boolean status;
     private String version;
     private int containerCount;
+    private boolean daemonRunning;
+    private String operatingSystem;
 
 }
