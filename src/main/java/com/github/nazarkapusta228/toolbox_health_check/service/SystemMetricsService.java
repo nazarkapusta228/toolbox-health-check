@@ -1,6 +1,7 @@
 package com.github.nazarkapusta228.toolbox_health_check.service;
 
 import com.github.nazarkapusta228.toolbox_health_check.model.SystemMetrics;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -9,7 +10,8 @@ import java.lang.management.OperatingSystemMXBean;
 import java.text.DecimalFormat;
 
 @Service
-public class SystemMetricsService {
+@RequiredArgsConstructor
+public final class SystemMetricsService {
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
     private static final long GB = 1024 * 1024 * 1024;
